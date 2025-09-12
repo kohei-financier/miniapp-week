@@ -1,0 +1,60 @@
+# .gitignore
+
+#========================================================================
+# General / Common
+#========================================================================
+# macOS
+.DS_Store
+
+#========================================================================
+# Frontend (from frontend/.gitignore)
+#========================================================================
+# dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+# testing
+frontend/coverage/
+
+# production
+frontend/build/
+
+# misc
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+#========================================================================
+# Backend (from backend/.gitignore)
+#========================================================================
+# Ignore bundler config.
+backend/.bundle/
+
+# Ignore all environment files.
+backend/.env*
+
+# Ignore all logfiles and tempfiles.
+backend/log/*
+!backend/log/.keep
+backend/tmp/*
+!backend/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+backend/tmp/pids/*
+!backend/tmp/pids/
+!backend/tmp/pids/.keep
+
+# Ignore storage (uploaded files in development and any SQLite databases).
+backend/storage/*
+!backend/storage/.keep
+backend/tmp/storage/*
+!backend/tmp/storage/
+!backend/tmp/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+backend/config/master.key
